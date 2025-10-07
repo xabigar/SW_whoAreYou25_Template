@@ -5,7 +5,7 @@ function differenceInDays(date1) {
     // YOUR CODE HERE
 }
 
-let difference_In_Days = differenceInDays(new Date("01-10-2025"));
+let difference_In_Days = differenceInDays(new Date("08-18-2022"));
 
 window.onload = function () {
   document.getElementById("gamenumber").innerText = difference_In_Days.toString();
@@ -36,6 +36,15 @@ Promise.all([fetchJSON("fullplayers25"), fetchJSON("solution25")]).then(
     console.log(game.solution);
 
     document.getElementById("mistery").src = `https://playfootball.games/media/players/${game.solution.id % 32}/${game.solution.id}.png`;
-  
+
+
+      // YOUR CODE HERE
+    let addRow = setupRows( /* THIS NEEDS A PARAMETER */ );
+    // get myInput object...
+      // when the user types a number an press the Enter key:
+        addRow( /* the ID of the player, where is it? */);
+    //  
+
+
   }
 );
